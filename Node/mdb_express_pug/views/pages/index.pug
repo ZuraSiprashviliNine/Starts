@@ -1,0 +1,29 @@
+
+extends ../layout
+
+block content
+    .container
+        .row
+            .col-lg-8.col-md-6.p-2
+                .swiper-container.header-swiper-container.h-100
+                    .swiper-wrapper
+                        .swiper-slide.lie(style="background-image:url(http://slidervilla.com/dbox/files/2014/05/1.jpg)")
+                            img(src="/images/demo.svg").w-100.invisible
+                        .swiper-slide.lie(style="background-image:url(https://www.builtbyevolve.com/images/plugins/nerve-slider/simple.jpg)")
+                            img(src="/images/demo.svg").w-100.invisible
+                    .swiper-button-next.header-swiper-button-next
+                        .h1.m-0.text-white
+                            span.fa.fa-angle-right
+                    .swiper-button-prev.header-swiper-button-prev
+                        .h1.m-0.text-white
+                            span.fa.fa-angle-left
+                    .swiper-pagination.header-swiper-pagination
+            .col-lg-4.col-md-6.p-2
+                .h-100.card
+                    img.card-img-top(src='https://mdbootstrap.com/img/Photos/Others/images/43.jpg', alt='Card image cap')
+                    .card-body
+                        h4.card-title
+                            a Card title
+                        p.card-text
+                            | Some quick example text to build on the card title and make up the bulk of the card's content.
+                        a.btn.btn-primary(href='#').btn-block Button

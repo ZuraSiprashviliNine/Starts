@@ -1,0 +1,68 @@
+doctype html
+head
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.css')
+  link(rel='stylesheet', href='/stylesheets/mdb/mdb.css')
+  link(rel='stylesheet', href='/stylesheets/swiper.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+
+  title= title || 'title_'
+
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+html
+  nav.navbar.navbar-expand-lg.navbar-dark.black
+    a.navbar-brand(href='#') Navbar
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo02', aria-controls='navbarTogglerDemo02', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarTogglerDemo02.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto.mt-lg-0
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Link
+        li.nav-item
+          a.nav-link.disabled(href='#') Disabled
+
+  block content
+
+  footer.page-footer.font-small.black.pt-4
+    .container.text-center.text-md-left
+      .row
+        .col-md-6.mt-md-0.mt-3
+          h5.text-uppercase Footer Content
+          p Here you can use rows and columns here to organize your footer content.
+        hr.clearfix.w-100.d-md-none.pb-3
+        .col-md-3.mb-md-0.mb-3
+          h5.text-uppercase Links
+          ul.list-unstyled
+            li
+              a(href='#!') Link 1
+            li
+              a(href='#!') Link 2
+            li
+              a(href='#!') Link 3
+            li
+              a(href='#!') Link 4
+        .col-md-3.mb-md-0.mb-3
+          h5.text-uppercase Links
+          ul.list-unstyled
+            li
+              a(href='#!') Link 1
+            li
+              a(href='#!') Link 2
+            li
+              a(href='#!') Link 3
+            li
+              a(href='#!') Link 4
+    .footer-copyright.text-center.py-3
+      | © 2018 Copyright:
+      a(href='https://mdbootstrap.com/bootstrap-tutorial/')  MDBootstrap.com
+
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/popper.min.js')
+  script(src='/javascripts/bootstrap.js')
+  script(src='/javascripts/mdb.js')
+  script(src='/javascripts/swiper.js')
+  script(src='/javascripts/script.js')
